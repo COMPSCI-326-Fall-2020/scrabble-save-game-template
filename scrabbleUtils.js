@@ -14,10 +14,10 @@ export function isValid(word) {
  * This helper function will make a copy of a set of available tiles.
  * As you can see, this function is NOT exported. It is just a helper function for other functions in this file.
  * @param {Object<string, number>} availableTiles A mapping of available tiles to their amount.
- * @returns {Object<string, number>} A copy of the parameter. 
+ * @returns {Object<string, number>} A copy of the parameter.
  */
 function copyAvailableTiles(availableTiles) {
-    // TODO
+    return Object.assign({}, availableTiles);
 }
 
 /**
